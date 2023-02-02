@@ -19,7 +19,7 @@ beforeAll(() => {
 });
 
 afterAll(() => {
-  fruits.length = 0;
+  fruits.splice(0, fruits.length);
 });
 
 describe("POST /fruits", () => {
